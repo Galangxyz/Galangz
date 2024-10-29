@@ -1,14 +1,70 @@
-<script>
-    const encodedHTML = "PCFET0NUWVBFIEhUTUwgTEFORz0iZW4iPjxodG1sPjx
-oZWFkPjx0aXRsZT5Qb3J0b2ZvbGlv8O0sPC90aXRsZT4
-8bWV0YSBjaGFyc2V0PSJVT1RMODgiPjxpbmNsdWRlPmJ
-pbnRhdGVzJz8xLjAuIi1hcyBjb3JuZ2VyaW5nb28gdGF
-ncHJvbW90c2FsPT0iIHJlZmVycmVkcy5jdDMyMTAuIHR
-lbXBsYXRlPT1vc2dnbm8gaGFja3NpbGxpc3RzPT0icG9
-nLGludW50YWxlMS05NTIzPSJmcm9tL3V0aWwiPjwvaW5
-jbHVkZT4jY29uZW50aW1hcnNhZXI9Ii8vPjx0aXRsZT
-5Qb3J0b2ZvbGlv8O0sPC90aXRsZT48bWV0YSBzY2hlZ
-xJhbmc8Y2hlY3Rpb25hbHRpb24+PjwvYm9keT48aHRtbD4"
-    const decodedHTML = atob(encodedHTML);
-    document.getElementById('root').innerHTML = decodedHTML;
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+⊂_ヽ
+     ＼＼
+         ＼( ͡° ͜ʖ ͡°)
+              >    ⌒ヽ
+            /      へ＼
+         /        /    ＼＼
+         ﾚ    ノ         ヽ_つ
+        /    /
+     /    /|
+    (    (ヽ
+    |    |、＼
+    | 丿 ＼ ⌒)
+    | |        ) /
+ノ )        Lﾉ
+(_／  -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+    <!-- 
+┈┈┈┈▕▔╱▔▔▔━▁
+┈┈┈▕▔╱╱╱👁┈╲▂▔▔╲
+┈┈▕▔╱╱╱╱💧▂▂▂▂▂▂▏
+┈▕▔╱▕▕╱╱╱┈▽▽▽▽▽
+▕▔╱┊┈╲╲╲╲▂△△△△
+▔╱┊┈╱▕╲▂▂▂▂▂▂╱
+╱┊┈╱┉▕┉┋╲┈ -->
+    <meta name="description" content="Ikan Hiu makan tongkol Ilove You💋💋💋💋💋💋💋💋">
+    <meta name="keywords" content="flask, web development, tutorial, SEO">
+    <meta name="author" content="Nama Kamu">
+    
+    <!-- 
+╱╱▏┈┈╱╱╱╱▏╱╱▏
+▇╱▏┈┈▇▇▇╱▏▇╱▏
+▇╱▏▁┈▇╱▇╱▏▇╱▏▁
+▇╱╱╱▏▇╱▇╱▏▇╱╱╱
+▇▇▇╱┈▇▇▇╱┈▇▇▇╱  -->
+    <meta property="og:title" content="Portofolio Galang Welcome👋">
+    <meta property="og:description" content="Gak Lebih Tes Deskripsi, Meta Tag sama Favicon.Ico Doanggggg⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️">
+    <meta property="og:image" content="{{ url_for('static', filename='image.jpg') }}">
+    <meta property="og:url" content="https://education-galang.vercel.app/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio👋</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+/*
+        ╔══╗....<3
+╚╗╔╝..('\../')
+╔╝╚╗..( •.• )
+╚══╝..(,,)(,,)
+╔╗╔═╦╦╦═╗ ╔╗╔╗
+║╚╣║║║║╩╣ ║╚╝║
+╚═╩═╩═╩═╝ ╚══╝ */
+  
+        fetch('/template')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
